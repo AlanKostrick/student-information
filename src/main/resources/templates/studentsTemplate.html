@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Our Students</title>
+</head>
+<body>
+
+<main>
+	<ul>
+		<li th:each="student: ${studentModel}"><a th:href="@{/show-student(id=${student.id})}" 
+		th:text="${student.name}"></a></li>
+	</ul>
+</main>
+
+<footer>
+	&copy; wcci 2018
+</footer>
+
+</body>
+</html>
